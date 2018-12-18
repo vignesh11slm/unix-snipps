@@ -1,0 +1,140 @@
+find . -newer fileNm
+
+find . -newer fileNm -delete
+
+find . -newer fileNm - exec
+
+find /usr/share -name '*.pdf'
+
+find /usr/share -maxdepth 1 -name '*.pdf'
+
+find /usr/share -maxdepth 2 -name '*.pdf' -exec ls -lh
+
+find /usr/share -maxdepth 2 -size +138k
+
+
+Redirection
+
+Write to a file > 
+
+Append a file >>
+
+Noclobber - set -o noclobber
+
+ignore noclobber >|
+
+Read from a file <
+
+
+
+Overwrite a file  - ls /etc > file.txt
+
+more correctly - ls /etc 1 > file.txt
+
+append to a file - ls /etc 1 > file.txt
+
+1 - standard output - default
+
+2 - error output
+
+Redirecting Standard error
+
+ls /etc 2 > file1.txt
+
+ls /etc 2 >> file1.txt
+
+ls /etc > file1.txt 2>&1 ;
+Send error op to &1 says - same place as standard op
+
+ls /home /hime 2>error.log
+
+ls /home /hime > out.txt 2>&1
+
+ls /home/hime > /dev/null 2>&1
+
+
+set -o noclobber
+
+
+
+df -h > diskfree.txt
+
+mail root -s "Message" < diskfree.txt
+
+
+ls -l | wc -l
+
+mkfifo mypipe
+
+ls -l > mypipe
+
+wc -l < mypipe
+
+
+
+mkfifo /home/prod01/vignesh
+
+ls /etc > <pipeNm>
+
+Inter process communication
+
+ls /etc | tee mytee
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
